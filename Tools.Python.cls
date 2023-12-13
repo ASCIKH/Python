@@ -1,4 +1,4 @@
-Class Python
+Class Tools.Python
 {
 
 /*
@@ -44,7 +44,7 @@ ClassMethod Barcode(Filename As %String) [ Language = python ]
 	return json.dumps(barcodes)
 }
 
-ClassMethod OCR(PDFfile As %String) [ Language = python ]
+ClassMethod OCR1(PDFfile As %String) [ Language = python ]
 {
 	from pathlib import Path
 	import pytesseract
