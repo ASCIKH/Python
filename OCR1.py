@@ -300,6 +300,7 @@ if image_flag:
 
 # Display the content of the page
 result = ''.join(text_per_page['Page_0'][4])
+print(result)
 et = time.time()
 elapsed_time = et - st
 print('Execution time:', elapsed_time, 'seconds')

@@ -25,5 +25,6 @@ with TemporaryDirectory() as tempdir:
             text = text.replace("-\n", "")
 et = time.time()
 elapsed_time = et - st
+print(text)
 print('Execution time:', elapsed_time, 'seconds')
 

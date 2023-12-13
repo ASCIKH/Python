@@ -23,6 +23,7 @@ image = transform(image).unsqueeze(0).to(device)
 pytesseract.pytesseract.tesseract_cmd = (r"C:\Program Files\Tesseract-OCR\tesseract.exe")
 processed_image = transforms.ToPILImage()(image.squeeze(0).cpu())
 text = pytesseract.image_to_string(processed_image)
+print(text)
 et = time.time()
 elapsed_time = et - st
 print('Execution time:', elapsed_time, 'seconds')
